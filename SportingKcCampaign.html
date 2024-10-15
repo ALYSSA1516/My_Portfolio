@@ -4,19 +4,38 @@
     <h1>Sporting Kc Campagin</h1>
 </head>
 <body>
-<p>For my senior year at the University of Nebraska Lincoln I took a class for Sports Media and Communication. It was my capstone class and we worked with the copany Sporting Kc. We each had groups where we took on roles for the semster. My job was the interactive designer I worked with the art director and copywriter. My major responsibility was interactive advertising, and execution of the agency’s digital presentation to the client. I created a lot of post we put up on instagram. I helped design the tshirts for our campaign. And created flyers and posters which were handed out and spread across the UNL campus.</p>
-</body>
+<p>For my senior year at the University of Nebraska Lincoln I took a class for Sports Media and Communication. It was my capstone class and we worked with the copany Sporting Kc. We each had groups where we took on roles for the semster. My job was the interactive designer I worked with the art director and copywriter. My major responsibility was interactive advertising, and execution of the agency’s digital presentation to the client. I created a lot of post we put up on instagram. I helped design the t-shirts for our campaign. And created flyers and posters which were handed out and spread across the UNL campus.</p>
 
-<body>
     <h1>My Photo Gallery</h1>
-    <img src="1.jpg" alt="Photo 1">
+    <div class="photo-container">
+        <div class="photo">
+        <img src="1.jpg" alt="Photo 1">
+    </div>
+     <div class="photo">
     <img src="2.jpg" alt="Photo 2">
+</div>
+     <div class="photo">
     <img src="3.jpg" alt="Photo 3">
+</div>
+ <div class="photo">
     <img src="4.jpg" alt="Photo 4">
+</div>
+ <div class="photo">
     <img src="5.jpg" alt="Photo 5">
+</div>
+ <div class="photo">
     <img src="6.jpg" alt="Photo 6">
+</div>
+ <div class="photo">
     <img src="7.jpg" alt="Photo 7">
+</div>
+ <div class="photo">
     <img src="8.jpg" alt="Photo 8">
+</div>
+    </div>
+   <div class="flex-center">
+        <a class="button" href="https://www.instagram.com/sportingkcx3v3?igsh=MWxsbnRtMXJydjR1ZA==">Sporting KC Campaign Instagram</a><br>
+    </div>
     <!-- Add more <img> tags for additional photos -->
 
 <a class="home-button" href="index.html">Back to Home</a>
@@ -56,6 +75,43 @@
       user-select: text;
       font-family:helvetica;
       }
+
+        .photo-container {
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center the items */
+            flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+        }
+
+        .photo {
+            margin: 10px; /* Space around each photo */
+        }
+
+        img {
+            width: 200px; /* Set a fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Optional: add rounded corners */
+        }
+        .flex-center {
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center the items horizontally */
+            flex-wrap: wrap; /* Allow items to wrap onto the next line */
+        }
+
+        .button {
+            display: inline-block; /* Keep the button style */
+            padding: 10px 15px; /* Button padding */
+            margin: 10px; /* Space between buttons */
+            background-color: antiquewhite; /* Button background color */
+            color: black; /* Text color */
+            text-decoration: none; /* Remove underline */
+            border: 2px solid black;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth color transition */
+        }
+
+        .button:hover {
+            background-color:black; /* Darker background on hover */
+            color: antiquewhite;
 </style>
 
 </html>
