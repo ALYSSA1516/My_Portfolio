@@ -1,130 +1,183 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-
-<head><h1>My Portfolio</h1></head>
-
-<div class="container">
-        <img src="me.jpg" alt="Me" class="image">
-  </div>
-
-<p>My name is Alyssa Perrotto, and I’m from Omaha, Nebraska. I attended the University of Nebraska-Lincoln from 2019 to 2023, where I earned a Bachelor’s degree in Journalism with a major in Advertising and Public Relations and a minor in Digital Humanities. This portfolio highlights both my college work and my professional experiences from the past year.
-
-After graduating, I relocated to Sterling, Colorado—a small town with limited opportunities in my field. Despite this, I found ways to apply my skills. I worked as a server at a local restaurant called Hootenannies, where I assisted the owner with menu redesigns and marketing materials, which you can view under that section of my portfolio. I also worked with a crystal shop, helping to manage their social media presence. Even in a small town, I was able to use my education and build on my experience.
-
-I’m now preparing to move to Kansas City in search of new opportunities that will allow me to continue learning and advancing my career. I appreciate you taking the time to explore my work, and I look forward to any feedback you might have.</p>
-
-<body>
-    <h3>Navigation Menu</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-</body>
-
-<body>
-  <nav>
-    <ul>
-        <li><a href="SportingKcCampaign.html">Sporting Kc Campaign</a></li>
-        <li><a href="AmazonCampaign.html">Amazon Campaign</a></li>
-        <li><a href="AppPitch.html">App Pitch</a></li>
-        <li><a href="CommercialStoryboard.html">Commercial Storyboard</a></li>
-        <li><a href="PrintAd.html">Print Ad</a></li>
-        <li><a href="https://alyssanp999.wixsite.com/farm-to-table">Farm-To-Table</a></li>
-        <li><a href="https://alyssa1516.github.io/Tamahana-Te-Rauparaha">Tamahaa-Te-Rauparaha</a></li>
-        <li><a href="SacredMatter.html">Sacred Matter</a></li>
-        <li><a href="Hootenannies.html">Hootenannies</a></li>
-        <li><a href="FreelanceWork.html">Freelance Work</a></li>
-
-    </ul>
-</nav>
-</body>
-
-<body>
-      <a href="Resume1.pdf" download class="download-button">Download Resume</a>
-</body>
-
-<style>
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.text-container {
-  flex: 1;
-  align-content:center;
-}
-.image {
-  width: 100px; /* Adjust the width as needed */
-  height: auto;
-  border-radius: 25%; /* Use 50% to create a circular shape */
-  align-content:center;
-}
-    html {
-        background:antiquewhite;
-    }
-    h1 {
-        color:black;
-        font-size:25;
-        text-align:center;
-    }
-    h2 {
-        color: black;
-        font-size: 22px;
-        text-align:center;  
-    }
-    h3 {
-        color: black;
-        font-size:22px;
-        text-align:center;
-    }
-    nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color:antiquewhite;
-    font-size:18px;
-    text-align:center;
-}
-    nav li {
-    display: inline-block;
-    margin-right: 10px;
-    font-size:18px;
-    text-align:center;
-
-}
-    nav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    transition: background-color 0.3s ease;
-    font-size:18px;
-    text-align:center;
-
-}
-    nav a:hover {
-    background-color: black;
-    color: antiquewhite;
-}
-    p {
-        color: black;
-        font-size: 18px;
-        text-align:center;
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Center text for the whole page */
         }
 
-    .download-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: antiquewhite;
-      color: black;
-      text-decoration:underline;
-      border-radius: 1px;
-      border: 3px solid black;
-      font-weight: bold;
-      align-content:center;
-      justify-content:center;
-      display:flex;
+        h1 {
+            color: black; /* Text color */
+            font-size: 20px; /* Responsive font size */
+            margin: 20px 30px; /* Spacing above and below */
+            text-align: center; /* Center the text */
+            position: relative; /* Position relative for the line */
+
+
+        }
+         .underline {
+            width: 100%; /* Full width of the container */
+            height: 2px; /* Height of the underline */
+            background-color: black; /* Color of the underline */
+            margin:20px 10px;
+            margin-top: 5px; /* Space between the heading and the line */
+        }
+        h2 {
+            color: black;
+            font-size: 20px; /* Responsive font size */
+            margin: 20px 20px;
+            font-family: 'Roboto', sans-serif;
+
+        }
+        h3 {
+             color: black; /* Text color */
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px; /* Responsive font size */
+            border: 2px dashed black; /* Dashed border */
+            padding: 10px; /* Padding inside the box */
+            margin: 20px auto; /* Center the box with top/bottom margin */
+            border-radius: 5px; /* Rounded corners */
+            background-color: antiquewhite; /* Background color */
+            text-align: center; /* Center the text */
+            max-width: 500px; /* Set max width for the box */
+        }  
+        h4 {
+            color: black;
+            font-size: 15px; /* Responsive font size */
+            margin: 20px 0;
+        }      
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px; /* Add space below the image */
+        }
+
+        .image {
+            width: 150px;
+            height: auto;
+            border-radius: 8%; /* Circular image */
+            margin: 10px 0px;
+            padding: 10px 0px;
+            margin-right: 10px; /* Space between image and text */
+        }
+
+
+        p {
+            color: black; /* Text color */
+            font-size: 1rem; /* Responsive font size */
+            margin: 10px 10px 10px; /* Spacing between paragraphs */
+            text-align: center; /* Center the text */
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px 10 px;
+            margin: 0;
+            background-color: antiquewhite;
+            display: flex;
+            line-height:45px;
+            justify-content: center; /* Center navigation menu */
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: antiquewhite;
+            color: black;
+            text-decoration: underline;
+            border: 3px solid black;
+            font-weight: bold;
+            margin: 20px 0; /* Add space around the button */
+        }
+
+        .styled-box {
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            border: 5px solid #000;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+        }
     </style>
+</head>
+
+<body>
+    <div><h1>Alyssa Perrotto -- 402.515.4282 -- alyssaperrotto@gmail.com</h1></div>
+     <div class="underline"><h2>My Portfolio</h2></div> 
+            <div class="container">
+            <div class="image-container">
+                <img src="me.jpg" alt="Me" class="image">
+            </div></div>
+
+        <div class="text-container">
+            <p>Hi! My name is Alyssa Perrotto.</p>
+            <p>I am originally from Omaha, Nebraska. I attended the University of Nebraska-Lincoln where I earned a bachelor’s degree in Journalism with a major in Advertising and Public Relations and a minor in Digital Humanities.</p>
+            <p>After graduating, I relocated to Sterling, Colorado, a small town with limited opportunities in my field. In this community, I found ways to apply my skills.</p>
+            <p>I worked as a server at the locally owned restaurant, named Hootenannies. There, I assisted with menu design and marketing materials.</p>
+            <p>I also worked at a crystal shop named Sacred Matter, helping to manage their social media presence.</p>
+            <p>In this community, I was able to use my education and build on my experience.</p>
+            <p>I’m now preparing to move to Kansas City, Missouri, in search of new opportunities that will allow me to continue learning and advancing my career.</p>
+            <p>Please take a few minutes to browse my portfolio, which highlights both my college work and my professional experiences.</p>
+            <p>Thank you so much for taking the time and for your consideration.</p>
+        </div>
+    </div>
+
+    <nav>
+        <h3>Navigation Menu</h3>
+        <h4>Professional Work</h4>
+        <ul>
+            <li><a href="SacredMatter.html">Sacred Matter</a></li>
+            <li><a href="Hootenannies.html">Hootenannies</a></li>
+            <li><a href="FreelanceWork.html">Freelance Work</a></li>
+        </ul>
+        <h4>College Coursework</h4>
+        <ul>
+            <li><a href="SportingKcCampaign.html">Sporting KC Campaign</a></li>
+            <li><a href="AmazonCampaign.html">Amazon Campaign</a></li>
+            <li><a href="AppPitch.html">App Pitch</a></li>
+            <li><a href="CommercialStoryboard.html">Commercial Storyboard</a></li>
+        </ul>
+        <ul>    
+            <li><a href="PrintAd.html">Print Ad</a></li>
+            <li><a href="https://alyssanp999.wixsite.com/farm-to-table">Farm-To-Table</a></li>
+            <li><a href="https://alyssa1516.github.io/Tamahana-Te-Rauparaha">Tamahaa-Te-Rauparaha</a></li>
+        </ul>
+    </nav>
+
+    <a href="Resume1.pdf" download class="download-button">Download Resume</a>
+</body>
 
 </html>
-
