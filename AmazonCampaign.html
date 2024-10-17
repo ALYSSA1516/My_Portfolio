@@ -1,35 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Microsite Project</title>
+    <style>
+        html {
+            background-color: antiquewhite;
+        }
+
+        body {
+            margin: 0; /* Remove default body margin */
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for consistency */
+            display: flex; /* Enable flexbox for centering */
+            flex-direction: column; /* Arrange items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+
+        h1 {
+            color: black;
+            font-size: 22px; /* Corrected property */
+            text-align: center;
+            margin: 20px 0; /* Add spacing */
+        }
+
+        p {
+            color: black;
+            font-size: 16px; /* Adjusted for better readability */
+            text-align: center;
+            margin: 20px 0; /* Add spacing */
+            max-width: 800px; /* Optional: set a max width for better readability */
+        }
+
+        a.home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: antiquewhite;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none; /* Remove underline */
+            margin: 20px 0; /* Add spacing */
+        }
+
+        .grid-container {
+            display: grid; /* Enable grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+            gap: 10px; /* Space between images */
+            padding: 10px; /* Padding around the grid */
+            max-width: 800px; /* Optional: set a max width to center the grid */
+            margin: 0 auto; /* Center the grid */
+        }
+
+        .grid-item {
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Clip image overflow */
+        }
+
+        .grid-item img {
+            width: 100%; /* Full width of grid item */
+            height: 200; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below images */
+        }
+
+        /* Center the image in the first grid */
+        .grid-container:first-of-type {
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center the image */
+            align-items: center; /* Center vertically if needed */
+        }
+
+        /* Increase size for the second grid images */
+        .grid-container:nth-of-type(2) .grid-item img {
+            width: 100%; /* Full width for larger images */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Set a max height for the images in the second grid */
+            object-fit: cover; /* Ensure images cover the area */
+        }
+
+        /* Smaller size for the third grid images */
+        .grid-container:nth-of-type(3) .grid-item img {
+            max-height: 200px; /* Set a max height for the images in the third grid */
+            object-fit: contain; /* Ensure images fit within their container */
+        }
+    </style>
+</head>
 
 <body>
-  <h1>Amazon Microsite Project</h1>
-  <p>I developed a mini campaign for one of Amazon's new products, where I was responsible for creating the overall color scheme, selecting fonts, and designing the layout of the campaign materials. This experience provided me with valuable insights into the marketing process, allowing me to learn how to effectively create and produce a comprehensive marketing campaign from concept to execution.</p>
-<iframe src="[Amazon]_microsite.pdf" width="100%" height="600px"></iframe> 
-<a class="home-button" href="index.html">Back to Home</a>
+    <h1>Amazon Microsite Project</h1>
+    <p>I developed a mini campaign for one of Amazon's new products, where I was responsible for creating the overall color scheme, selecting fonts, and designing the layout of the campaign materials. This experience provided me with valuable insights into the marketing process, allowing me to learn how to effectively create and produce a comprehensive marketing campaign from concept to execution.</p>
+
+    <h2>Colors and Typography</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Amazon1.png" alt="Colors and Typography">
+        </div>
+    </div>
+
+    <h2>Computer Ad</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Amazon2.png" alt="Description of Image 4">
+        </div>
+        <div class="grid-item">
+            <img src="Amazon3.png" alt="Description of Image 5">
+        </div>
+        <div class="grid-item">
+            <img src="Amazon4.png" alt="Description of Image 6">
+        </div>
+        <div class="grid-item">
+            <img src="Amazon5.png" alt="Description of Image 6">
+        </div>
+        <div class="grid-item">
+            <img src="Amazon6.png" alt="Description of Image 6">
+        </div>
+    </div>
+
+    <h2>Smart Phone Ad</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Amazon7.png" alt="Description of Image 6">
+        </div>
+        <div class="grid-item">
+            <img src="Amazon8.png" alt="Description of Image 6">
+        </div>
+        <div class="grid-item">
+            <img src="Amazon9.png" alt="Description of Image 6">
+        </div>
+    </div>
+
+    <a class="home-button" href="index.html">Back to Home</a>
 </body>
 
-<style>
-  html {
-    background-color:antiquewhite;
-  }
-  h1 {
-    color:black;
-    size:22px;
-    text-align:center;
-  }
-  p {    
-    color:black;
-    size:22px;
-    text-align:center;   
-  }
- a.home-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: antiquewhite;
-      color: black;
-      border: 2px solid black;
-      border-radius: 5px;
-      user-select: text;
-      }
-</style>
 </html>
