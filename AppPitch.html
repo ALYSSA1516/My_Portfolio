@@ -1,34 +1,63 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <h1>App Pitch</h1>
-  <p>In one of my classes we were asked to create an app that would benefit students. We created the idea and came up with a business plan. This is the pitch for my app idea.</p>
-  <iframe src="Practice Pitch.pdf" width="100%" height="600px"></iframe> 
-  <a class="home-button" href="index.html">Back to Home</a>
-</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Pitch</title>
+    <style>
+        html {
+            background-color: antiquewhite;
+        }
 
-<style>
-   html {
-    background-color:antiquewhite;
-  }
-  h1 {
-    color:black;
-    size:22px;
-    text-align:center;
-  }
-  p {    
-    color:black;
-    size:22px;
-    text-align:center;   
-  }
-     a.home-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: antiquewhite;
-      color: black;
-      border: 2px solid black;
-      border-radius: 5px;
-      user-select: text;
-      }
-</style>
+        body {
+            margin: 0; /* Remove default body margin */
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for consistency */
+            display: flex; /* Enable flexbox for centering */
+            flex-direction: column; /* Arrange items vertically */
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text for all elements */
+        }
+
+        h1 {
+            color: black;
+            font-size: 22px; /* Corrected property */
+            margin: 20px 0; /* Add spacing */
+            font-family:'Roboto', sans-serif;
+        }
+
+        p {
+            color: black;
+            font-size: 16px; /* Adjusted for better readability */
+            margin: 20px 0; /* Add spacing */
+            max-width: 800px; /* Optional: set a max width for better readability */
+        }
+
+        a.home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: antiquewhite;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none; /* Remove underline */
+            margin: 20px 0; /* Add spacing */
+        }
+
+        iframe {
+            border: none; /* Remove border from the iframe */
+            margin: 20px 0; /* Add spacing around iframe */
+            max-width: 300%; /* Ensure iframe is responsive */
+            height: 600px; /* Set a consistent height */
+        }
+    </style>
+</head>
+<body>
+    <h1>App Pitch</h1>
+    <p>In one of my classes, we were asked to create an app that would benefit students. I came up with the idea for Cornhusker Connections, an app designed to help University of Nebraska students build stronger connections on campus, both socially and academically. I developed a business plan that outlined how the app would foster a sense of community by connecting students with study groups, campus events, and networking opportunities. The app would also include features like tutoring services, mentorship programs, and a real-time chat function for easy communication between peers.</p>
+    
+    <iframe src="Practice Pitch.pdf"></iframe>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <a class="home-button" href="index.html">Back to Home</a>
+</body>
 </html>
