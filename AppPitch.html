@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Pitch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         html {
             background-color: antiquewhite;
@@ -22,7 +23,6 @@
             color: black;
             font-size: 22px; /* Corrected property */
             margin: 20px 0; /* Add spacing */
-            font-family:'Roboto', sans-serif;
         }
 
         p {
@@ -39,25 +39,75 @@
             color: black;
             border: 2px solid black;
             border-radius: 5px;
-            text-align: center;
             text-decoration: none; /* Remove underline */
             margin: 20px 0; /* Add spacing */
         }
 
-        iframe {
-            border: none; /* Remove border from the iframe */
-            margin: 20px 0; /* Add spacing around iframe */
-            max-width: 300%; /* Ensure iframe is responsive */
-            height: 600px; /* Set a consistent height */
+        .grid-container {
+            display: grid; /* Enable grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+            gap: 10px; /* Space between images */
+            padding: 20px; /* Padding around the grid */
+            max-width: 1000px; /* Optional: set a max width for the grid */
+            margin: 0 auto; /* Center the grid */
+        }
+
+        .grid-item {
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Clip image overflow */
+        }
+
+        .grid-item img {
+            width: 100%; /* Full width of grid item */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below images */
         }
     </style>
 </head>
 <body>
     <h1>App Pitch</h1>
-    <p>In one of my classes, we were asked to create an app that would benefit students. I came up with the idea for Cornhusker Connections, an app designed to help University of Nebraska students build stronger connections on campus, both socially and academically. I developed a business plan that outlined how the app would foster a sense of community by connecting students with study groups, campus events, and networking opportunities. The app would also include features like tutoring services, mentorship programs, and a real-time chat function for easy communication between peers.</p>
+    <p>In one of my courses, we were tasked with designing an app to enhance the student experience. I conceptualized Cornhusker Connections, an application aimed at helping University of Nebraska students cultivate stronger connections on campus, both socially and academically. I crafted a comprehensive business plan detailing how the app would promote a sense of community by linking students to study groups, campus events, and networking opportunities. Additionally, the app would feature tutoring services, mentorship programs, and a real-time chat function to facilitate seamless communication among peers.</p>
     
-    <iframe src="Practice Pitch.pdf"></iframe>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <h2>Cornhusker Connections</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="AP1.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP2.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP3.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP4.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP5.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP6.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP7.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP8.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP9.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP10.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP11.png" alt="Description of photo 1">
+        </div>
+         <div class="grid-item">
+            <img src="AP12.png" alt="Description of photo 1">
+        </div>
+    </div>
+
     <a class="home-button" href="index.html">Back to Home</a>
 </body>
 </html>
