@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Center text for the whole page */
+        }
+
+        h1 {
+            color: black; /* Text color */
+            font-size: 24px; /* Increased font size for better visibility */
+            margin: 20px 30px; /* Spacing above and below */
+        }
+
+        .underline {
+            width: 100%; /* Full width of the container */
+            height: 2px; /* Height of the underline */
+            background-color: black; /* Color of the underline */
+            margin: 20px 10px;
+            margin-top: 5px; /* Space between the heading and the line */
+        }
+
+        p {
+            color: black; /* Text color */
+            font-size: 1rem; /* Responsive font size */
+            margin: 10px 10px; /* Spacing between paragraphs */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid black; /* Black border */
+            background-color: transparent; /* Transparent background */
+            color: black; /* Text color */
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+        }
+
+        .button:hover {
+            background-color: black; /* Background color on hover */
+            color: antiquewhite; /* Text color on hover */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0; /* Remove default padding */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>First Code</h1>
+    <div class="underline"></div>
+    <p>This link takes you to the first website I ever coded, and it served as the inspiration for creating my portfolio. Through this project, I learned HTML and CSS, which ignited my passion for coding. Since then, I have dedicated myself to continuously improving my skills in web development. This experience not only deepened my understanding of coding principles but also fueled my desire to explore more complex projects and technologies. As I continue to expand my knowledge, I remain committed to enhancing my proficiency in web development and contributing to innovative digital solutions.</p>
+    
+    <ul>
+        <li><a class="button" href="https://alyssa1516.github.io/Tamahana-Te-Rauparaha">Tamahaa-Te-Rauparaha</a></li>
+    </ul>
+    
+    <div>
+        <a class="button" href="index.html">Back to Home</a>
+    </div>
+
+</body>
+
+</html>
